@@ -31,6 +31,7 @@ body {
       padding: 6px 12px; 
       transition: 0.5s; 
       border-color: #008834; 
+     
     }  
 
     #Boton:hover { 
@@ -38,16 +39,16 @@ body {
       color: #ffffff;    
     } 
 
-    .Menu { 
+  .Menu { 
       position: fixed; 
       top: 1; 
       left: -290px; 
       width: 200px; 
       height: 100%; 
       background-color: #008834; 
+      color: white;
       padding: 30px; 
-      transition:  0.3s ; 
-      color: white;               
+      transition:  0.3s ;               
     } 
 
     .Menu h3 {         
@@ -77,7 +78,16 @@ body {
    .Menu li:hover { 
       background-color: #ffffff; 
       color: #008834; 
-    }  
+    }   
+  
+    .Menu a{
+       color: white;
+       text-decoration: none;
+       display: block;
+    }
+    .Menu li:hover a {
+      color: #008834;
+    }
 
 footer { 
   background-color: #2e7d32; 
@@ -88,36 +98,161 @@ footer {
   font-size: 0.9em; 
 } 
 
-.Inicio{ 
-  background: white; 
-  border-radius: 12px; 
-  padding: 25px; 
-  margin-bottom: 25px; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
-  transition: color 0.3s ease, transform 0.3s ease; 
-  cursor: pointer; 
-}  
-.Inicio:hover{ 
-  color: #00c853;           
-  transform: scale(1.05);    
-} 
-.Inicio h2{ 
-  color: #2e7d32; 
-  margin-bottom: 10px; 
-} 
-.Inicio p{ 
-  font-size: 1.1em; 
-  color: #000000; 
-} 
 
-@media (max-width: 768px) { 
-  header h1 { 
-  font-size: 1.1em; 
-  } 
-  .Menu a { 
-  font-size: 1em; 
-  } 
-  main { 
-  padding: 15px; 
-  } 
-} 
+h2{
+    justify-content: center;
+    margin: 20px auto 20px auto;
+    color: #0b630b;
+    max-width: 55%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 4px rgba(2, 66, 27, 0.692); 
+    text-align: center;
+    font-size: x-large;
+}
+
+
+
+ .gallery {
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 40px auto 20px auto; 
+    max-width: 75%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px 50px 20px 50px;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  .gallery label {
+    cursor: pointer;
+    overflow: hidden;
+    display: block;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .gallery label img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+  }
+
+  .gallery label:hover {
+    transform: scale(1.05);
+    
+  }
+
+
+  .info {
+    max-width: 1000px;
+    margin-inline: auto;
+    background: #fff;
+    padding: 5px 20px 20px 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-top: 40px;
+    transition: 0.2s ease;
+  }
+
+.info h3{
+    color: white;
+}
+.text {
+    display: none;
+    color: white;
+    font-size: 1.1em;
+  }
+
+#img1:checked ~ .info {
+  background-color: #eb1c2d;
+  color: white;
+}
+#img2:checked ~ .info {
+  background-color: #ce9f00;
+  color: white;
+}
+#img3:checked ~ .info {
+  background-color: #279b48;
+  color: white;
+}
+#img4:checked ~ .info {
+  background-color: #c60021;
+  color: white;
+}
+#img5:checked ~ .info {
+  background-color: #ef402b;
+  color: white;
+}
+#img6:checked ~ .info {
+  background-color: #00aed9;
+  color: white;
+}
+#img7:checked ~ .info {
+  background-color: #ffb000;
+  color: white;
+}
+#img8:checked ~ .info {
+  background-color: #840038;
+  color: white;
+}
+#img9:checked ~ .info {
+  background-color: #ff4a05;
+  color: white;
+}
+#img10:checked ~ .info {
+  background-color: #e11484;
+  color: white;
+}
+#img11:checked ~ .info {
+  background-color: #f99d26;
+  color: white;
+}
+#img12:checked ~ .info {
+  background-color: #cd8200;
+  color: white;
+}
+#img13:checked ~ .info {
+  background-color: #368c0a;
+  color: white;
+}
+#img14:checked ~ .info {
+  background-color: #0a96f0;
+  color: white;
+}
+#img15:checked ~ .info {
+  background-color: #3eb049;
+  color: white;
+}
+#img16:checked ~ .info {
+  background-color: #0046bc;
+  color: white;
+}
+#img17:checked ~ .info {
+  background-color: #14496b;
+  color: white;
+}
+
+#img1:checked ~ .info #text1,
+#img2:checked ~ .info #text2,
+#img3:checked ~ .info #text3,
+#img4:checked ~ .info #text4,
+#img5:checked ~ .info #text5,
+#img6:checked ~ .info #text6,
+#img7:checked ~ .info #text7,
+#img8:checked ~ .info #text8,
+#img9:checked ~ .info #text9,
+#img10:checked ~ .info #text10,
+#img11:checked ~ .info #text11,
+#img12:checked ~ .info #text12,
+#img13:checked ~ .info #text13,
+#img14:checked ~ .info #text14,
+#img15:checked ~ .info #text15,
+#img16:checked ~ .info #text16,
+#img17:checked ~ .info #text17 {
+  display: block;
+}
