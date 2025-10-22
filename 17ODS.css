@@ -1,0 +1,123 @@
+body { 
+      font-family: Arial, sans-serif; 
+      background: #a8e4a1;  
+      margin: 0;
+    }  
+
+    header { 
+      background-color: #ffffff;  
+      display: flex; 
+      align-items: center; 
+      box-shadow: 0 2px 4px rgba(2, 66, 27, 0.692); 
+      background-color: #ffffff; 
+      padding: 1%; 
+      color: #019b3c;
+    }  
+    header h3{
+      margin-left: 2%;
+
+    }
+    header img{
+      margin-left: 25px;
+      margin-right: 10px;
+    }
+
+    #Boton{ 
+      background-color: #ffffff; 
+      color: #008834; 
+      font-size: 24px; 
+      cursor: pointer; 
+      border-radius: 4px; 
+      padding: 6px 12px; 
+      transition: 0.5s; 
+      border-color: #008834; 
+    }  
+
+    #Boton:hover { 
+      background-color: #008834; 
+      color: #ffffff;    
+    } 
+
+    .Menu { 
+      position: fixed; 
+      top: 1; 
+      left: -290px; 
+      width: 200px; 
+      height: 100%; 
+      background-color: #008834; 
+      padding: 30px; 
+      transition:  0.3s ; 
+      color: white;               
+    } 
+
+    .Menu h3 {         
+       font-size: 15px;   
+       margin: 0;      
+    }    
+
+    .Menu.activo { 
+      left: 0;  
+      margin-left: 0%; 
+    }  
+
+    .Menu ul { 
+      list-style: none; 
+      padding: 0; 
+      margin-top: 20px; 
+    }  
+
+    .Menu li { 
+      margin-bottom: 15px; 
+      padding: 6px 10px; 
+      border-radius: 4px; 
+      background-color: transparent; 
+      transition: 0.3s; 
+    }  
+
+   .Menu li:hover { 
+      background-color: #ffffff; 
+      color: #008834; 
+    }  
+
+footer { 
+  background-color: #2e7d32; 
+  color: white; 
+  text-align: center; 
+  padding: 15px; 
+  margin-top: 40px; 
+  font-size: 0.9em; 
+} 
+
+.Inicio{ 
+  background: white; 
+  border-radius: 12px; 
+  padding: 25px; 
+  margin-bottom: 25px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  transition: color 0.3s ease, transform 0.3s ease; 
+  cursor: pointer; 
+}  
+.Inicio:hover{ 
+  color: #00c853;           
+  transform: scale(1.05);    
+} 
+.Inicio h2{ 
+  color: #2e7d32; 
+  margin-bottom: 10px; 
+} 
+.Inicio p{ 
+  font-size: 1.1em; 
+  color: #000000; 
+} 
+
+@media (max-width: 768px) { 
+  header h1 { 
+  font-size: 1.1em; 
+  } 
+  .Menu a { 
+  font-size: 1em; 
+  } 
+  main { 
+  padding: 15px; 
+  } 
+} 
