@@ -79,12 +79,45 @@ body {
       color: #008834; 
     }  
 
-footer {
-  background-color: #222;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  margin-top: 40px;
-}
- 
+footer { 
+  background-color: #2e7d32; 
+  color: white; 
+  text-align: center; 
+  padding: 15px; 
+  margin-top: 40px; 
+  font-size: 0.9em; 
+} 
 
+.Inicio{ 
+  background: white; 
+  border-radius: 12px; 
+  padding: 25px; 
+  margin-bottom: 25px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  transition: color 0.3s ease, transform 0.3s ease; 
+  cursor: pointer; 
+}  
+.Inicio:hover{ 
+  color: #00c853;           
+  transform: scale(1.05);    
+} 
+.Inicio h2{ 
+  color: #2e7d32; 
+  margin-bottom: 10px; 
+} 
+.Inicio p{ 
+  font-size: 1.1em; 
+  color: #000000; 
+} 
+
+@media (max-width: 768px) { 
+  header h1 { 
+  font-size: 1.1em; 
+  } 
+  .Menu a { 
+  font-size: 1em; 
+  } 
+  main { 
+  padding: 15px; 
+  } 
+} 
