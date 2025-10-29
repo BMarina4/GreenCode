@@ -78,6 +78,14 @@ body {
       background-color: #ffffff; 
       color: #008834; 
     }  
+    .Menu a{
+       color: white;
+       text-decoration: none;
+       display: block;
+    }
+    .Menu li:hover a {
+      color: #008834;
+    }
 
 
 footer { 
@@ -97,13 +105,22 @@ section {
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 4px rgba(2, 66, 27, 0.692); 
-  
 }
+
+
 #sostenibilidad{
   display: flex;
+  transition: transform 0.3s ease; 
+}
+#sostenibilidad:hover{       
+  transform: scale(1.05);    
 }
 #km0{
   display: flex;
+  transition: transform 0.3s ease; 
+}
+#km0:hover{       
+  transform: scale(1.05);    
 }
 
 section h2 {
